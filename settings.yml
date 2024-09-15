@@ -1,3 +1,9 @@
+Groups_menu_should_appear_for:
+  type: list
+  list_type: group
+  default: ""
+  description:
+    en: "Show the header menu bar for these groups only."
 Menu_items:
   type: list
   default: "Design, magic, Get inspired!, vdm|Code, far-keyboard, Learn new things!, vdm|Business, far-money-bill-alt, Start a new career!, vdm|Shop, shopping-cart, Buy cool stuff!, vdo|More, none, Even more cool things!, vdo"
