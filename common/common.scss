@@ -1,3 +1,23 @@
+@import "str-to-list";
+
+
+@if $Groups_menu_should_appear_for !="" {
+
+    $list: str-to-list("#{$Groups_menu_should_appear_for}", "|");
+
+  .top-menu {
+     display: none;
+  }
+  @each $group in $list {
+     body.group-#{$group} {
+        .top-menu {
+          display: block;
+        }
+    }
+  }
+}
+
+
 @function fallback($setting, $color) {
   @if not $setting or $setting == "" {
     @return $color;
